@@ -1,0 +1,111 @@
+body.custom { background: transparent; }
+.custom .menu a { font-size: 2em; }
+.custom #content { width: 63em; }
+	.custom #page { background: transparent; }
+
+.custom #logo a {
+	-moz-box-shadow: 0 0 5px 5px #566636;
+	-webkit-box-shadow: 0 0 5px 2px #566636;
+	box-shadow: 0 0 5px 5px #566636;
+}
+
+.custom .post, .custom .post_box, .custom #comments { background: #ecfbcc; border: 1em solid #fff; padding: 1em; margin: 2.2em 0;
+	-moz-box-shadow: 0 0 5px 5px #566636; -webkit-box-shadow: 0 0 5px 2px #566636; box-shadow: 0 0 5px 5px #566636; }
+
+.custom .entry-title {
+    background: none repeat scroll 0 0 #FFFFFF;
+    clear: right;
+    display: block;
+    float: left;
+	margin: -.5em .5em 0 -.5em;
+    padding-right: 0.5em;
+	padding-left: 0.2em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	clear: right;
+}
+
+.custom .sidebar h3 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    clear: right;
+    display: block;
+    float: left;
+	margin: -1em .5em 0em -.5em;
+	padding: .3em .5em .5em .3em;
+}
+
+.custom .prev_next {
+	background: #ecfbcc;
+	border: 1em solid #fff;
+	padding: 1em;
+	margin: 1.1em 0;
+	-moz-box-shadow: 0 0 5px 5px #566636;
+	-webkit-box-shadow: 0 0 5px 2px #566636;
+	box-shadow: 0 0 5px 5px #566636;
+}
+
+.custom #respond_intro p, .custom #commentform label, .custom .prev_next p, .custom .format_text .to_comments {
+	font-family: "Josefin Sans Std Light","Century Gothic",Verdana,sans-serif;
+	color: #6C552E;
+}
+
+.custom li.widget ul { margin-top: 1.7em; }
+.custom .entry-content { margin-top: 2.5em; }
+
+.custom .format_text .to_comments { background: #fff; float: right; margin: 0 -1em -1em 0; padding: 0.5em 1em 0.5em 1em; }
+
+.custom .sidebar ul.sidebar_list { padding-left: 0; }
+
+.custom .sidebar .widget {
+	padding: 1em .5em;
+	border: 1em solid #fff;
+	background: #ECFBCC;
+	-moz-box-shadow: 0 0 5px 5px #566636;
+	-webkit-box-shadow: 0 0 5px 2px #566636;
+	box-shadow: 0 0 5px 5px #566636;
+}
+
+
+.custom ul.sidebar_list{ padding-top: 2.2em; }
+	.custom li.widget { margin-bottom: 1.769em; }
+.custom .thesis_widget_search p { margin-bottom: 0; }
+
+
+.custom .menu {
+	margin-top: 2.2em;
+	background: #7E6A48;
+	-moz-box-shadow: 0 0 5px 5px #566636;
+	-webkit-box-shadow: 0 0 5px 2px #566636;
+	box-shadow: 0 0 5px 5px #566636;
+
+}
+
+.custom #respond { margin-bottom: 1.1em; }
+.custom #commentform {  border-top: 1px dotted #7E6A48; }
+
+
+.custom #archive_intro {
+	background: #ecfbcc;
+	border: 1em solid #fff;
+	padding: 1em;
+	margin: 2.2em 0;
+	-moz-box-shadow: 0 0 5px 5px #566636;
+	-webkit-box-shadow: 0 0 5px 2px #566636;
+	box-shadow: 0 0 5px 5px #566636;
+}
+.custom #archive_intro h1 { margin-bottom: 0; }
+
+.custom #footer {
+	text-align: left;
+	padding: .5em;
+	border: 1em solid #fff;
+	background: #ECFBCC;
+	-moz-box-shadow: 0 0 5px 5px #566636;
+	-webkit-box-shadow: 0 0 5px 2px #566636;
+	box-shadow: 0 0 5px 5px #566636;
+}
+
+.custom #footer a { border-bottom: 1px solid; }
+.custom #footer a:hover { border-bottom: none; }
+
+.custom .right-side { float: right; padding-right: .6em; }

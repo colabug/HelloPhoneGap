@@ -3,203 +3,153 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
 <head profile="http://gmpg.org/xfn/11">
     <link rel="stylesheet" type="text/css"
-          href="http://coreylatislaw.com/wp-content/w3tc/min/9041a/default.include.c3b2db.css"
+          href="custom/custom.css"
           media="all"/>
+    <!--href="http://coreylatislaw.com/wp-content/w3tc/min/9041a/default.include.c3b2db.css"-->
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Corey Leigh Latislaw</title>
-    <meta name="robots" content="noodp, noydir"/>
     <meta name="description" content="Technology, Food, and Green Issues."/>
-    <!--[if lte IE 8]>
-    <link rel="stylesheet"
-          href="http://coreylatislaw.com/wp-content/themes/corey/lib/css/ie.css"
-          type="text/css" media="screen, projection"/><![endif]-->
-    <link rel="shortcut icon"
-          href="http://coreylatislaw.com/wp-content/uploads/2011/02/favicon.ico"/>
-    <link rel="canonical" href="http://coreylatislaw.com/"/>
-    <link rel="alternate" type="application/rss+xml"
-          title="Corey Leigh Latislaw RSS Feed"
-          href="http://coreylatislaw.com/feed/"/>
-    <link rel="pingback" href="http://coreylatislaw.com/xmlrpc.php"/>
-    <link rel="EditURI" type="application/rsd+xml" title="RSD"
-          href="http://coreylatislaw.com/xmlrpc.php?rsd"/>
-    <script>/*<![CDATA[*/var today=new
-        Date();if((today.getDate()==18)&&(today.getMonth()==0)&&(today.getFullYear()==2012))
-        {window.location="http://protestsopa.org";}/*]]>*/
-    </script>
-    <script type="text/javascript">var
-        _gaq=_gaq||[];_gaq.push(['_setAccount','UA-34029643-1']);_gaq.push(['_trackPageview']);(function(){var
-        ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var
-        s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
-    </script>
-    <meta name="_awb_version" content="2.0.3"/>
 </head>
+
 <body class="custom">
 <div id="container">
-    <div id="page">
-        <div id="header"><h1 id="logo"><a href="http://coreylatislaw.com">Corey
-            Leigh Latislaw</a></h1></div>
-        <ul class="menu">
-            <li class="tab tab-home current"><a href="http://coreylatislaw.com">Home</a>
+<div class="post-807 post type-post status-publish format-standard hentry category-mobile category-tech post_box top"
+     id="post-807">
+    <div class="headline_area"><h2 class="entry-title"><a
+            href="http://coreylatislaw.com/android-101-class-2/"
+            rel="bookmark"
+            title="Permanent link to Android 101, Class 2">Android 101, Class 2</a></h2></div>
+    <div class="format_text entry-content"><p>It&#8217;s time to
+        make our first Android application! <a
+                href="http://prezi.com/v42zi9rodkz5/android-101-class-2/"
+                onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://prezi.com']);">Check
+            out today&#8217;s slides</a>.</p>
+
+        <p><strong>Office Hours</strong></p>
+
+        <p>If you have any questions, please feel free to reach
+            out to the Facebook group. This forum gives you
+            access to your fellow classmates, the TAs, and
+            myself. In addition, I will hold Skype office hours
+            on Thursday, August 16 from 7-8 PM to answer any
+            questions that will help you get started. I will
+            hold office hours again on Saturday from 4-6 PM to
+            answer questions you may have when deeper in the
+            coding assignment.</p>
+
+        <p><strong>Homework Exercises</strong></p>
+
+        <p>If you haven&#8217;t finished <a
+                href="http://coreylatislaw.com/android-101-class-1/">last
+            night&#8217;s homework</a>, please start there to
+            get more familiar with the foundations of Java.</p>
+
+        <p>Now that we&#8217;ve laid the ground work for the
+            calculator app, let&#8217;s make it work! Here&#8217;s
+            what the calculator should do:</p>
+        <ol>
+            <li>Consecutive numbers should be appended to the
+                current number (Example: 1 2 3 4 5 should
+                display 12345).
             </li>
-            <li class="tab tab-1"><a href="http://coreylatislaw.com/about/"
-                                     title="About">About</a></li>
-            <li class="tab tab-2"><a href="http://coreylatislaw.com/contact/"
-                                     title="Contact">Contact</a></li>
-            <li class="cat-item cat-item-3"><a
-                    href="http://coreylatislaw.com/category/food/"
-                    title="View all posts filed under Food">Food</a></li>
-            <li class="cat-item cat-item-4"><a
-                    href="http://coreylatislaw.com/category/green/"
-                    title="View all posts filed under Green">Green</a></li>
-            <li class="cat-item cat-item-10"><a
-                    href="http://coreylatislaw.com/category/mobile/"
-                    title="View all posts filed under Mobile">Mobile</a></li>
-            <li class="cat-item cat-item-5"><a
-                    href="http://coreylatislaw.com/category/tech/"
-                    title="View all posts filed under Tech">Tech</a></li>
-            <li class="cat-item cat-item-15"><a
-                    href="http://coreylatislaw.com/category/travel/"
-                    title="View all posts filed under Travel">Travel</a></li>
+            <li>Create an enum that represents operation types
+                that a calculator can perform (see below for
+                more details).
+            </li>
+            <li>When an operation is performed, store the
+                type.
+            </li>
+            <li>When an operation is performed, store the number
+                displayed.
+                <ul>
+                    <li>NOTE: We&#8217;re displaying as a
+                        String, but should store a number type.
+                    </li>
+                    <li>int number = Integer.parseInt(&#8220;12345&#8243;)
+                        // Gives the integer 12345
+                    </li>
+                </ul>
+            </li>
+            <li>When equal is pressed, calculate the result
+                using the operation type and stored number.
+            </li>
+            <li>Division and modulus should perform integer
+                calculations (Example: 7 / 3 = 2 and 7 % 3 = 1).
+            </li>
+            <li>When equal is pressed, update the display with
+                the result.
+            </li>
+            <li>Pressing equal after a calculation is complete
+                should show the last result (Example: 2 + 3 = 5
+                ==== 5, pressing equal repeatedly after the
+                initial calculation will show as result of 5).
+            </li>
+            <li>The clear button should reset the calculator
+                state.
+            </li>
+            <li>Users should be able to change their minds about
+                what calculation to perform (Example: 2 * + / *
+                4 = 8, should calculate 2 * 4 because the last
+                operation entered was multiplication).
+            </li>
+            <li>Calculations can &#8220;chain&#8221; or use the
+                last calculated number in the new equation
+                (Example: 2 + 3 = 5 + 2 = 7).
+            </li>
+        </ol>
+        <p><strong>Extra Credit (End of Class Goals)</strong>
+        </p>
+
+        <p>Users don&#8217;t always do what you expect them too!
+            Handle the following unexpected user actions or
+            exceptional states:</p>
+        <ul>
+            <li>Detect division and modulus by 0. When this
+                occurs, place the application in an error mode
+                and display the string &#8220;NaN&#8221;. Only
+                pressing the clear button or a number key clears
+                this state.
+            </li>
+            <li>User presses equals after starting the
+                application.
+            </li>
+            <li>User presses an operation before a number is
+                entered.
+            </li>
+            <li>User enters a number, presses an operation, then
+                presses enter.
+            </li>
+            <li>Prevent and detect integer overflow. To prevent,
+                limit the number of digits a user can enter.
+                When a calculation exceeds the maximum integer
+                amount, place the calculator in an error mode
+                and display the string &#8220;Error&#8221;. Only
+                pressing the clear button or a number key clears
+                this state.
+            </li>
         </ul>
-        <div id="content_box">
-            <div id="content" class="hfeed">
-                <div class="post-807 post type-post status-publish format-standard hentry category-mobile category-tech post_box top"
-                     id="post-807">
-                    <div class="headline_area"><h2 class="entry-title"><a
-                            href="http://coreylatislaw.com/android-101-class-2/"
-                            rel="bookmark"
-                            title="Permanent link to Android 101, Class 2">Android
-                        101, Class 2</a></h2></div>
-                    <div class="format_text entry-content"><p>It&#8217;s time to
-                        make our first Android application! <a
-                                href="http://prezi.com/v42zi9rodkz5/android-101-class-2/"
-                                onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://prezi.com']);">Check
-                            out today&#8217;s slides</a>.</p>
+        <p><strong>Switches &amp; Enums</strong></p>
 
-                        <p><strong>Office Hours</strong></p>
-
-                        <p>If you have any questions, please feel free to reach
-                            out to the Facebook group. This forum gives you
-                            access to your fellow classmates, the TAs, and
-                            myself. In addition, I will hold Skype office hours
-                            on Thursday, August 16 from 7-8 PM to answer any
-                            questions that will help you get started. I will
-                            hold office hours again on Saturday from 4-6 PM to
-                            answer questions you may have when deeper in the
-                            coding assignment.</p>
-
-                        <p><strong>Homework Exercises</strong></p>
-
-                        <p>If you haven&#8217;t finished <a
-                                href="http://coreylatislaw.com/android-101-class-1/">last
-                            night&#8217;s homework</a>, please start there to
-                            get more familiar with the foundations of Java.</p>
-
-                        <p>Now that we&#8217;ve laid the ground work for the
-                            calculator app, let&#8217;s make it work! Here&#8217;s
-                            what the calculator should do:</p>
-                        <ol>
-                            <li>Consecutive numbers should be appended to the
-                                current number (Example: 1 2 3 4 5 should
-                                display 12345).
-                            </li>
-                            <li>Create an enum that represents operation types
-                                that a calculator can perform (see below for
-                                more details).
-                            </li>
-                            <li>When an operation is performed, store the
-                                type.
-                            </li>
-                            <li>When an operation is performed, store the number
-                                displayed.
-                                <ul>
-                                    <li>NOTE: We&#8217;re displaying as a
-                                        String, but should store a number type.
-                                    </li>
-                                    <li>int number = Integer.parseInt(&#8220;12345&#8243;)
-                                        // Gives the integer 12345
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>When equal is pressed, calculate the result
-                                using the operation type and stored number.
-                            </li>
-                            <li>Division and modulus should perform integer
-                                calculations (Example: 7 / 3 = 2 and 7 % 3 = 1).
-                            </li>
-                            <li>When equal is pressed, update the display with
-                                the result.
-                            </li>
-                            <li>Pressing equal after a calculation is complete
-                                should show the last result (Example: 2 + 3 = 5
-                                ==== 5, pressing equal repeatedly after the
-                                initial calculation will show as result of 5).
-                            </li>
-                            <li>The clear button should reset the calculator
-                                state.
-                            </li>
-                            <li>Users should be able to change their minds about
-                                what calculation to perform (Example: 2 * + / *
-                                4 = 8, should calculate 2 * 4 because the last
-                                operation entered was multiplication).
-                            </li>
-                            <li>Calculations can &#8220;chain&#8221; or use the
-                                last calculated number in the new equation
-                                (Example: 2 + 3 = 5 + 2 = 7).
-                            </li>
-                        </ol>
-                        <p><strong>Extra Credit (End of Class Goals)</strong>
-                        </p>
-
-                        <p>Users don&#8217;t always do what you expect them too!
-                            Handle the following unexpected user actions or
-                            exceptional states:</p>
-                        <ul>
-                            <li>Detect division and modulus by 0. When this
-                                occurs, place the application in an error mode
-                                and display the string &#8220;NaN&#8221;. Only
-                                pressing the clear button or a number key clears
-                                this state.
-                            </li>
-                            <li>User presses equals after starting the
-                                application.
-                            </li>
-                            <li>User presses an operation before a number is
-                                entered.
-                            </li>
-                            <li>User enters a number, presses an operation, then
-                                presses enter.
-                            </li>
-                            <li>Prevent and detect integer overflow. To prevent,
-                                limit the number of digits a user can enter.
-                                When a calculation exceeds the maximum integer
-                                amount, place the calculator in an error mode
-                                and display the string &#8220;Error&#8221;. Only
-                                pressing the clear button or a number key clears
-                                this state.
-                            </li>
-                        </ul>
-                        <p><strong>Switches &amp; Enums</strong></p>
-
-                        <p>Using switches and enums together can simplify the
-                            coding assignment. An <a
-                                    href="http://docs.oracle.com/javase/tutorial/java/javaOO/enum.html"
-                                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://docs.oracle.com']);">enum</a>
-                            is a handy data type that allows you to basically
-                            specify a name for an integer. Consider this
-                            example:</p>
-                        <pre style="padding-left: 30px;">public enum Season { WINTER, SPRING, SUMMER, FALL }</pre>
-                        <p>You&#8217;d define this enum in Season.java or in
-                            your current class. Then, you create a field in your
-                            activity that stores a particular season.</p>
-                        <pre style="padding-left: 30px;">Season season = Season.SUMMER;</pre>
-                        <p>This technique is especially useful when you want to
-                            do different things for different seasons. You could
-                            do this with normal if/else/else if blocks, but a <a
-                                    href="http://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html"
-                                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://docs.oracle.com']);">switch
-                                statement</a> is much cleaner:</p><pre
-                                style="padding-left: 30px;">switch (season)
+        <p>Using switches and enums together can simplify the
+            coding assignment. An <a
+                    href="http://docs.oracle.com/javase/tutorial/java/javaOO/enum.html"
+                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://docs.oracle.com']);">enum</a>
+            is a handy data type that allows you to basically
+            specify a name for an integer. Consider this
+            example:</p>
+        <pre style="padding-left: 30px;">public enum Season { WINTER, SPRING, SUMMER, FALL }</pre>
+        <p>You&#8217;d define this enum in Season.java or in
+            your current class. Then, you create a field in your
+            activity that stores a particular season.</p>
+        <pre style="padding-left: 30px;">Season season = Season.SUMMER;</pre>
+        <p>This technique is especially useful when you want to
+            do different things for different seasons. You could
+            do this with normal if/else/else if blocks, but a <a
+                    href="http://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html"
+                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://docs.oracle.com']);">switch
+                statement</a> is much cleaner:</p><pre
+                style="padding-left: 30px;">switch (season)
 {
     case SPRING:
         System.out.println("I love spring!");
@@ -220,962 +170,7 @@
     default:
         System.out.println("Not sure what season we're in!");
 }</pre>
-                        <p>&nbsp;</p>
-
-                        <p class="to_comments"><a
-                                href="http://coreylatislaw.com/android-101-class-2/#comments"
-                                rel="nofollow"><span>0</span> comments</a></p>
-                    </div>
-                </div>
-                <div class="post-791 post type-post status-publish format-standard hentry category-mobile category-tech post_box"
-                     id="post-791">
-                    <div class="headline_area"><h2 class="entry-title"><a
-                            href="http://coreylatislaw.com/android-101-class-1/"
-                            rel="bookmark"
-                            title="Permanent link to Android 101, Class 1">Android
-                        101, Class 1</a></h2></div>
-                    <div class="format_text entry-content"><p>Welcome to the <a
-                            href="http://www.meetup.com/Girl-Develop-It-Philadelphia/events/70638192/"
-                            onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.meetup.com']);">Girl
-                        Develop It Android 101 course</a>! The course material
-                        will be open, just make sure to <a
-                                title="Beginning Android with IntelliJ"
-                                href="http://coreylatislaw.com/beginning-android-with-intellij/">prepare
-                            your development environment</a> before attempting
-                        the material.</p>
-
-                        <p><strong>Slides &amp; Notes</strong></p>
-
-                        <p>This course assumes that students have no programming
-                            or Java experience. Therefore, <a
-                                    href="http://prezi.com/gqiqbkkumfyt/android-101-class-1/"
-                                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://prezi.com']);">the
-                                slides for the first class</a> focus mainly on
-                            object oriented programming principles, the Java
-                            programming language, and using the IntelliJ IDE. <a
-                                    href="http://coreylatislaw.com/wp-content/uploads/2012/08/Class-1-Handout.pdf"
-                                    onclick="javascript:_gaq.push(['_trackEvent','download','http://coreylatislaw.com/wp-content/uploads/2012/08/Class-1-Handout.pdf']);">Class
-                                1 Handout</a>.</p>
-
-                        <p><strong>Homework</strong></p>
-
-                        <p>The homework for the class can be found <a
-                                href="http://github.com/colabug/Penguin-Java-Example"
-                                onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://github.com']);">here</a>.
-                            Please fork the repository to complete the homework
-                            assignment. <a
-                                    href="https://help.github.com/articles/fork-a-repo"
-                                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://help.github.com']);">Complete
-                                step one</a> and use the github client to
-                            download locally (or follow all the instructions to
-                            do it on the command line). Follow the instructions
-                            in the <a
-                                    href="https://github.com/colabug/Penguin-Java-Example/blob/master/HOMEWORK"
-                                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://github.com']);">HOMEWORK
-                                file</a>.</p>
-
-                        <p><strong>Classroom Example</strong></p><pre>public class Penguin
-{
-    public static void main( String[] argv )
-    {
-        int weight = 25;
-        System.out.println( "weight = " + weight );
-
-        float lengthOfBeak = (float) .417;
-        System.out.println( "length of beak = " + lengthOfBeak );
-
-        short shoeSize = 5;
-        System.out.println( "shoe size = " + shoeSize );
-
-        boolean isHungry = true;
-        boolean isThirsty = false;
-
-        System.out.println( "hungry? " + isHungry );
-        System.out.println( "thirsty? " + isThirsty );
-
-        char c = 'c';
-        System.out.println( "character c = " + c );
-
-        if ( weight == shoeSize )
-        {
-            System.out.println( "weight == shoeSize" );
-        }
-        else
-        {
-            System.out.println( "weight not == shoeSize" );
-        }
-    }
-}</pre>
-                        <p class="to_comments"><a
-                                href="http://coreylatislaw.com/android-101-class-1/#comments"
-                                rel="nofollow"><span>1</span> comment</a></p>
-                    </div>
-                </div>
-                <div class="post-792 post type-post status-publish format-standard hentry category-mobile category-tech post_box"
-                     id="post-792">
-                    <div class="headline_area"><h2 class="entry-title"><a
-                            href="http://coreylatislaw.com/beginning-android-with-intellij/"
-                            rel="bookmark"
-                            title="Permanent link to Beginning Android with IntelliJ">Beginning
-                        Android with IntelliJ</a></h2></div>
-                    <div class="format_text entry-content"><p>Welcome future
-                        Android developers!</p>
-
-                        <p>I&#8217;m very excited about next week&#8217;s class!
-                            I&#8217;m a huge fan of Android and can&#8217;t wait
-                            to share my love with you all.</p>
-
-                        <p>Please install all of the following
-                            <strong>before</strong> class begins. It takes a
-                            long time to install several of these tools, so it
-                            would be hard on the class bandwidth and will take a
-                            lot of time to get ready while the class is going on
-                            around you!</p>
-
-                        <p>If you are having trouble, please do not hesitate to
-                            reach out through the facebook group. The TAs and I
-                            will check this periodically and help you get ready
-                            for the class. Remember it&#8217;s best to ask the
-                            whole group as others will benefit from your
-                            question and it&#8217;s answer. Other good places to
-                            check are the <a
-                                    href="http://groups.google.com/group/android-developers"
-                                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://groups.google.com']);">android
-                                developers mailing list</a> and <a
-                                    href="http://stackoverflow.com/questions/tagged/android"
-                                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://stackoverflow.com']);">stackoverflow</a>.
-                        </p>
-
-                        <p><strong>Software Installation</strong></p>
-                        <ul>
-                            <li>You will need IntelliJ (the community edition is
-                                fine) and the Android SDK. An excellent guide
-                                for installing both is here: <a
-                                        href="http://stackoverflow.com/questions/5271182/how-do-i-set-up-intellij-idea-for-android-applications"
-                                        onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://stackoverflow.com']);">How
-                                    do i set up IntelliJ IDEA for android
-                                    applications?</a>
-                                <ul>
-                                    <li>Note Step 1: If you are using a Mac,
-                                        Java should already be installed. Verify
-                                        by opening Applications -&gt; Utilities
-                                        -&gt; Terminal. Enter java -version and
-                                        you should see output similar to the
-                                        following:<pre>[clatislaw:/Users/clatislaw] java -version
-java version "1.6.0_33"
-Java(TM) SE Runtime Environment (build 1.6.0_33-b03-424-11M3720)
-Java HotSpot(TM) 64-Bit Server VM (build 20.8-b03-424, mixed mode)</pre>
-                                    </li>
-                                    <li>New Project, steps 4 &amp; 5, ensure
-                                        that you are using the path that is
-                                        correct for your system.
-                                    </li>
-                                    <li>NOTE: You don&#8217;t need to intall all
-                                        SDKs but make sure to get the ones that
-                                        are most important (2.3.3 [Gingerbread],
-                                        3.2 [Honeycomb], 4.0.3 [Ice Cream
-                                        Sandwich], and 4.1 [Jellybean]). If your
-                                        phone is older than Gingerbread, make
-                                        sure to get the SDK that your phone
-                                        uses. You can check by going to Settings
-                                        -&gt; About phone -&gt; Software
-                                        information -&gt; Android version. Here
-                                        are the suggested libraries:<a
-                                                href="http://coreylatislaw.com/wp-content/uploads/2012/08/suggested-libraries.png"><img
-                                                class="wp-image-801 aligncenter"
-                                                title="suggested libraries"
-                                                src="http://coreylatislaw.com/wp-content/uploads/2012/08/suggested-libraries.png"
-                                                alt="" width="496"
-                                                height="547"/></a></li>
-                                    <li>Sign up for a <a
-                                            href=" https://github.com">github
-                                        account</a>. I highly suggest using the
-                                        <a href="http://windows.github.com"
-                                           onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://windows.github.com']);">Windows</a>
-                                        or <a href="http://mac.github.com "
-                                              onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://mac.github.com']);">Mac</a>
-                                        client.
-                                    </li>
-                                    <li>Download and install <a
-                                            href="http://git-scm.com"
-                                            onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://git-scm.com']);">git</a>.
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <p class="to_comments"><a
-                                href="http://coreylatislaw.com/beginning-android-with-intellij/#comments"
-                                rel="nofollow"><span>1</span> comment</a></p>
-                    </div>
-                </div>
-                <div class="post-760 post type-post status-publish format-standard hentry category-food category-green post_box"
-                     id="post-760">
-                    <div class="headline_area"><h2 class="entry-title"><a
-                            href="http://coreylatislaw.com/philly-food-swap/"
-                            rel="bookmark"
-                            title="Permanent link to Philly Food Swap">Philly
-                        Food Swap</a></h2></div>
-                    <div class="format_text entry-content"><p
-                            style="text-align: left;">The husband and I
-                        participated in our second Philly Food Swap on Wednesday
-                        at the beautiful <a href="http://www.wyck.org/"
-                                            onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.wyck.org']);">Wyck
-                            Historic House &amp; Garden</a>. It&#8217;s always a
-                        great time meeting other foodies and exchanging handmade
-                        goodies!</p>
-
-                        <p style="text-align: center;"><a
-                                href="http://coreylatislaw.com/wp-content/uploads/2012/07/Prep.jpg"><img
-                                class="aligncenter  wp-image-762"
-                                title="Pasta &amp; Tartlet Prep"
-                                src="http://coreylatislaw.com/wp-content/uploads/2012/07/Prep-791x1024.jpg"
-                                alt="Pasta &amp; Tartlet Prep" width="475"
-                                height="614"/></a></p>
-
-                        <p style="text-align: center;"><a
-                                href="http://www.wyck.org/"
-                                onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.wyck.org']);"><img
-                                class=" wp-image-761  aligncenter"
-                                title="Grounds"
-                                src="http://coreylatislaw.com/wp-content/uploads/2012/07/Grounds-791x1024.jpg"
-                                alt="Grounds" width="475" height="614"/></a></p>
-
-                        <p style="text-align: center;"><a
-                                href="http://coreylatislaw.com/wp-content/uploads/2012/07/Wares.jpg"><img
-                                class="aligncenter  wp-image-764"
-                                title="Food Swap Wares"
-                                src="http://coreylatislaw.com/wp-content/uploads/2012/07/Wares-791x1024.jpg"
-                                alt="" width="475" height="614"/></a></p>
-
-                        <p style="text-align: center;"><a
-                                href="http://coreylatislaw.com/wp-content/uploads/2012/07/Wares2.jpg"><img
-                                class="aligncenter  wp-image-765"
-                                title="Food Swap Wares"
-                                src="http://coreylatislaw.com/wp-content/uploads/2012/07/Wares2-791x1024.jpg"
-                                alt="Food Swap Wares" width="475" height="614"/></a>
-                        </p>
-
-                        <p style="text-align: center;"><a
-                                href="http://coreylatislaw.com/wp-content/uploads/2012/07/Swap.jpg"><img
-                                class="aligncenter  wp-image-763" title="Swap!"
-                                src="http://coreylatislaw.com/wp-content/uploads/2012/07/Swap-791x1024.jpg"
-                                alt="Swap!" width="475" height="614"/></a></p>
-
-                        <p style="text-align: center;"><a
-                                href="http://coreylatislaw.com/wp-content/uploads/2012/07/DSC_0102.jpg"><img
-                                class="aligncenter  wp-image-770"
-                                title="Final Haul"
-                                src="http://coreylatislaw.com/wp-content/uploads/2012/07/DSC_0102-1024x678.jpg"
-                                alt="Final Haul" width="575"/></a></p>
-
-                        <p style="text-align: center;">My favorite item was a
-                            bottle of garlic &amp; basil infused vodka.
-                            Yummy!</p>
-
-                        <p class="to_comments"><a
-                                href="http://coreylatislaw.com/philly-food-swap/#comments"
-                                rel="nofollow"><span>4</span> comments</a></p>
-                    </div>
-                </div>
-                <div class="post-716 post type-post status-publish format-standard hentry category-mobile category-tech post_box"
-                     id="post-716">
-                    <div class="headline_area"><h2 class="entry-title"><a
-                            href="http://coreylatislaw.com/mobile-lightning/"
-                            rel="bookmark"
-                            title="Permanent link to Mobile Lightning!">Mobile
-                        Lightning!</a></h2></div>
-                    <div class="format_text entry-content"><p>Interested in
-                        mobile technologies? Want to learn from leaders in
-                        Philadelphia? Join us on Tuesday, April 24th for
-                        fast-paced evening of lightning talks. These five minute
-                        talks will cover Android, iOS (iPhone/iPad), and mobile
-                        web topics.</p>
-
-                        <p>This event is part of <a
-                                href="http://www.phillytechweek.com/"
-                                onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.phillytechweek.com']);">Philly
-                            Tech Week</a> and hosted by the <a
-                                href="http://androidalliancephilly.com/"
-                                onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://androidalliancephilly.com']);">Android
-                            Alliance</a> and <a href="http://phillycocoa.org/"
-                                                onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://phillycocoa.org']);">PhillyCocoa</a>.
-                            This event couldn&#8217;t happen without generous
-                            sponsorship from <a
-                                    href="http://chariotsolutions.com/"
-                                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://chariotsolutions.com']);">Chariot
-                                Solutions</a> and <a
-                                    href="http://seedphilly.org/"
-                                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://seedphilly.org']);">Seed
-                                Philly</a>. The event will provide dinner and
-                            drinks during and/or following the event.</p>
-
-                        <p><strong>Topics</strong></p>
-                        <ul>
-                            <li>Handing mobile device constraints</li>
-                            <li>Introduction to Objective-C</li>
-                            <li>Android Fragments</li>
-                            <li>TDD Android</li>
-                            <li>Introduction to KIF</li>
-                            <li>Android styles</li>
-                            <li>Dependency management with CocoaPods</li>
-                            <li>Using LayoutManagers</li>
-                            <li>Sencha Touch</li>
-                            <li>Phone Gap</li>
-                            <li>Other potential topics include: mobile design
-                                and Windows mobile
-                            </li>
-                        </ul>
-                        <p><a href="http://mobilelightning.eventbrite.com/"
-                              onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://mobilelightning.eventbrite.com']);">RSVP:
-                            mobilelightning.eventbrite.com/</a></p>
-
-                        <p>What topics would you like to hear about?</p>
-
-                        <p class="to_comments"><a
-                                href="http://coreylatislaw.com/mobile-lightning/#comments"
-                                rel="nofollow"><span>0</span> comments</a></p>
-                    </div>
-                </div>
-                <div class="post-665 post type-post status-publish format-standard hentry category-mobile category-tech post_box"
-                     id="post-665">
-                    <div class="headline_area"><h2 class="entry-title"><a
-                            href="http://coreylatislaw.com/emerging-technology-for-the-enterprise-preview/"
-                            rel="bookmark"
-                            title="Permanent link to ETE Preview">ETE
-                        Preview</a></h2></div>
-                    <div class="format_text entry-content"><p>I&#8217;ll be
-                        speaking at the <a
-                                href="http://phillyemergingtech.com/2012"
-                                onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://phillyemergingtech.com']);">Emerging
-                            Technology for the Enterprise</a> conference about
-                        <a href="http://phillyemergingtech.com/2012/sessions/the-fragment-transition-avoiding-obsoletion-and-writing-better-android-apps"
-                           onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://phillyemergingtech.com']);">fragments</a>,
-                        why you should be using them, and more importantly how
-                        to start today.</p>
-
-                        <p>Here&#8217;s a good place to start if you will be
-                            unable to join me or want to read ahead.</p>
-                        <ul>
-                            <li>
-                                <a href="http://android-developers.blogspot.com/2011/02/android-30-fragments-api.html"
-                                   onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://android-developers.blogspot.com']);">Fragments
-                                    for All</a></li>
-                            <li>
-                                <a href="http://stackoverflow.com/questions/5695408/so-what-are-the-exact-advantages-of-fragments-in-android-3-0"
-                                   onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://stackoverflow.com']);">Advantages
-                                    of Fragments</a></li>
-                            <li>
-                                <a href="http://developer.android.com/guide/topics/fundamentals/fragments.html"
-                                   onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://developer.android.com']);">Fragment
-                                    Fundamentals</a></li>
-                            <li>
-                                <a href="http://developer.android.com/guide/practices/tablets-and-handsets.html"
-                                   onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://developer.android.com']);">Supporting
-                                    Tablets and Handsets</a></li>
-                        </ul>
-                        <p>I would love to hear about your experiences with
-                            fragments. Have you been holding off? Have you
-                            upgraded an existing phone app? What did/do you find
-                            most confusing about them?</p>
-
-                        <p>Hope to see you at the session!</p>
-
-                        <p class="to_comments"><a
-                                href="http://coreylatislaw.com/emerging-technology-for-the-enterprise-preview/#comments"
-                                rel="nofollow"><span>0</span> comments</a></p>
-                    </div>
-                </div>
-                <div class="post-663 post type-post status-publish format-standard hentry category-mobile category-tech post_box"
-                     id="post-663">
-                    <div class="headline_area"><h2 class="entry-title"><a
-                            href="http://coreylatislaw.com/android-101-a-crash-course/"
-                            rel="bookmark"
-                            title="Permanent link to Android 101: A Crash Course">Android
-                        101: A Crash Course</a></h2></div>
-                    <div class="format_text entry-content"><p><a
-                            href="http://chariotsolutions.com/"
-                            onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://chariotsolutions.com']);"
-                            target="_blank">Chariot Solutions</a>, my new
-                        employer, has a nifty day of learning called Chariot
-                        Day. This Saturday, Charioteers will give 45 minute
-                        presentations on a broad spectrum of topics, including
-                        enterprise Java techniques, mobile, and Arduinos.</p>
-
-                        <p>Originally I had planned to use it as practice for my
-                            <a href="http://phillyemergingtech.com/2012/sessions/the-fragment-transition-avoiding-obsoletion-and-writing-better-android-apps"
-                               onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://phillyemergingtech.com']);"
-                               target="_blank">Philly ETE talk</a>, but instead
-                            I&#8217;m trying out material for <a
-                                    href="http://www.skillshare.com/Android-101/1466620110"
-                                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.skillshare.com']);"
-                                    target="_blank">my Skillshare class</a>
-                            (which I can also use for my Android Girl Develop It
-                            class).</p>
-
-                        <p>It&#8217;s an immersive 45 minute dive into Android.
-                            At the end of the session the students will have a
-                            <a href="https://github.com/colabug/Tardis"
-                               onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://github.com']);"
-                               target="_blank">simple Doctor Who app</a>. The
-                            app displays a Tardis and greeting. Clicking on the
-                            Tardis takes you inside with a separate greeting.
-                            Clicking on the inside of the Tardis shows your
-                            favorite Doctor Who quote. I also created a tablet
-                            version with these two views side by side.</p>
-
-                        <p>It&#8217;ll cover these foundation topics:</p>
-                        <ul>
-                            <li>XML layouts</li>
-                            <li>Themes, styles, drawables, &amp; strings</li>
-                            <li>Click/event handling</li>
-                            <li>Starting a new activity</li>
-                            <li>Specifying an icon for the app</li>
-                            <li>Fragments &amp; tablet version (if time)</li>
-                        </ul>
-                        <p>This session works best if the participants have
-                            already installed the SDK and have a physical or
-                            virtual device. If the class is for total beginners,
-                            I&#8217;d start with a 45 minute <a
-                                    href="http://developer.android.com/sdk/index.html"
-                                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://developer.android.com']);"
-                                    target="_blank">SDK download</a> and <a
-                                    href="http://developer.android.com/sdk/installing.html"
-                                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://developer.android.com']);"
-                                    target="_blank">installation</a> session.
-                        </p>
-
-                        <p>By the way, here&#8217;s my favorite pics for the
-                            app:</p>
-                        <ul>
-                            <li>
-                                <a href="http://www.justjon.net/wp-content/uploads/2010/09/tardis-tennant.jpg"
-                                   onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.justjon.net']);"
-                                   target="_blank">Outside the Tardis</a>
-                                (originally from BBC site?)
-                            </li>
-                            <li>
-                                <a href="http://images.fanpop.com/images/image_uploads/doctor-in-TARdiS-doctor-who-257407_1024_768.jpg"
-                                   onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://images.fanpop.com']);"
-                                   target="_blank">Outside Tardis 2</a> (©BBC)
-                            </li>
-                            <li>
-                                <a href="http://www.bbc.co.uk/doctorwho/gallery/s2_12-13gallery/800/jackie_tardis.jpg"
-                                   onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.bbc.co.uk']);"
-                                   target="_blank">Inside the Tardis</a> (©BBC)
-                            </li>
-                            <li>
-                                <a href="http://www.bbc.co.uk/doctorwho/gallery/s3_11gallery/800/18.jpg"
-                                   onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.bbc.co.uk']);"
-                                   target="_blank">Inside the Tardis 2</a>
-                                (©BBC)
-                            </li>
-                            <li>
-                                <a href="http://coreylatislaw.com/wp-content/uploads/2012/03/icon.png"
-                                   target="_blank">Icon</a> (An original, free
-                                for any purpose. Attribution welcomed.)
-                            </li>
-                        </ul>
-                        <p class="to_comments"><a
-                                href="http://coreylatislaw.com/android-101-a-crash-course/#comments"
-                                rel="nofollow"><span>1</span> comment</a></p>
-                    </div>
-                </div>
-                <div class="post-584 post type-post status-publish format-standard hentry category-mobile category-tech post_box"
-                     id="post-584">
-                    <div class="headline_area"><h2 class="entry-title"><a
-                            href="http://coreylatislaw.com/configure-android-testing-in-intellij-11/"
-                            rel="bookmark"
-                            title="Permanent link to Configure Android Testing in IntelliJ 11">Configure
-                        Android Testing in IntelliJ 11</a></h2></div>
-                    <div class="format_text entry-content"><p>Had a heck of a
-                        time finding a tutorial on configuring Android
-                        instrumentation testing in IntelliJ. I tried the command
-                        line approach, but it was cumbersome and I&#8217;d
-                        rather have IDE integration. Finally I stumbled across
-                        this
-                        <a href="https://androidcookbook.com/Recipe.seam?recipeId=3352"
-                           onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://androidcookbook.com']);"
-                           title="link" target="_blank">link</a> which got me
-                        most of the way there. Some of the instructions are now
-                        automated in IntelliJ 11, so here&#8217;s an updated
-                        tutorial.</p>
-
-                        <p><em>This tutorial assumes that you have installed the
-                            Android SDK, created an Android project, and simply
-                            want to add testing to it.</em></p>
-
-                        <p>First, open project structure dialog by right
-                            clicking on project name or with the keyboard
-                            shortcut F4. Click the plus button and select
-                            &#8220;Module.&#8221;</p>
-
-                        <p>
-                            <a href="http://coreylatislaw.com/wp-content/uploads/2011/12/Project-Settings.png"><img
-                                    class="size-large wp-image-612"
-                                    title="Project Settings"
-                                    src="http://coreylatislaw.com/wp-content/uploads/2011/12/Project-Settings-1024x830.png"
-                                    alt="" width="575"/></a></p>
-
-                        <p>Next, select &#8220;Create module from scratch&#8221;
-                            on the first screen of the wizard. Then choose a
-                            name and select &#8220;Android Module&#8221; type.
-                            Accept source directory settings on the next screen.<br/>
-                            <a href="http://coreylatislaw.com/wp-content/uploads/2011/12/New-Android-Module.png"><img
-                                    class="size-large wp-image-610"
-                                    title="New Android Module"
-                                    src="http://coreylatislaw.com/wp-content/uploads/2011/12/New-Android-Module-1024x820.png"
-                                    width="575"/></a></p>
-
-                        <p>Finally, select &#8220;Test&#8221; under &#8220;Project
-                            properties&#8221; and ensure the &#8220;Tested
-                            module&#8221; from the drop down list is correct. I
-                            like to set the &#8220;Target Device&#8221; to USB
-                            (New option! Note: Acts funky when two devices are
-                            plugged in. I filed a bug <a
-                                    href="http://youtrack.jetbrains.net/issue/IDEA-78968"
-                                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://youtrack.jetbrains.net']);"
-                                    target="_blank">here</a>). Finish the
-                            tutorial.<br/> <a
-                                    href="http://coreylatislaw.com/wp-content/uploads/2011/12/Android-Test-Configuration.png"><img
-                                    src="http://coreylatislaw.com/wp-content/uploads/2011/12/Android-Test-Configuration-1024x825.png"
-                                    alt="" title="Android Test Configuration"
-                                    width="575"
-                                    class="size-large wp-image-609"/></a></p>
-
-                        <p>Your project structure should look something like
-                            this:<br/> <a
-                                    href="http://coreylatislaw.com/wp-content/uploads/2011/12/Updated-Project-Settings.png"><img
-                                    src="http://coreylatislaw.com/wp-content/uploads/2011/12/Updated-Project-Settings-1024x823.png"
-                                    alt="" title="Updated Project Settings"
-                                    width="575"
-                                    class="size-large wp-image-614"/></a></p>
-
-                        <p>When you exit, you will automatically have a run
-                            configuration for your new tests! Hit the play
-                            button and enjoy.<br/> <a
-                                    href="http://coreylatislaw.com/wp-content/uploads/2011/12/Run-Tests.png"><img
-                                    src="http://coreylatislaw.com/wp-content/uploads/2011/12/Run-Tests-1024x651.png"
-                                    alt="" title="Run Tests" width="575"
-                                    class="size-large wp-image-613"/></a></p>
-
-                        <p class="to_comments"><a
-                                href="http://coreylatislaw.com/configure-android-testing-in-intellij-11/#comments"
-                                rel="nofollow"><span>3</span> comments</a></p>
-                    </div>
-                </div>
-                <div class="post-563 post type-post status-publish format-standard hentry category-green category-tech post_box"
-                     id="post-563">
-                    <div class="headline_area"><h2 class="entry-title"><a
-                            href="http://coreylatislaw.com/recycled-electronic-jewelry-class/"
-                            rel="bookmark"
-                            title="Permanent link to Recycled Electronic Jewelry Class">Recycled
-                        Electronic Jewelry Class</a></h2></div>
-                    <div class="format_text entry-content"><p>I took my first
-                        class today at The Hacktory. I found the class through
-                        <a href="http://skillshare.com/"
-                           onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://skillshare.com']);">Skillshare</a>.
-                        It was fun and definitely worth the $20 in materials
-                        alone. Plus it was also a good excuse to spend some time
-                        exercising the creative side!</p>
-
-                        <p>I&#8217;m bummed that I left the choker. It was made
-                            with the same rainbow wire as the belt and bracelet,
-                            but had no processor glued on.</p>
-
-                        <p>Can you guess all the electronic parts?</p>
-                        <style type='text/css'>
-                            #gallery-1 {
-                            margin: auto;
-                            }
-                            #gallery-1 .gallery-item {
-                            float: left;
-                            margin-top: 10px;
-                            text-align: center;
-                            width: 25%;
-                            }
-                            #gallery-1 img {
-                            border: 2px solid #cfcfcf;
-                            }
-                            #gallery-1 .gallery-caption {
-                            margin-left: 0;
-                            }
-                        </style>
-                        <div id='gallery-1'
-                             class='gallery galleryid-563 gallery-columns-4 gallery-size-thumbnail'>
-                            <dl class='gallery-item'>
-                                <dt class='gallery-icon'><a
-                                        href="http://coreylatislaw.com/wp-content/uploads/2011/12/ring.jpg"
-                                        title='ring'><img width="150"
-                                                          height="150"
-                                                          src="http://coreylatislaw.com/wp-content/uploads/2011/12/ring-150x150.jpg"
-                                                          class="attachment-thumbnail"
-                                                          alt="ring"
-                                                          title="ring"/></a>
-                                </dt>
-                            </dl>
-                            <dl class='gallery-item'>
-                                <dt class='gallery-icon'><a
-                                        href="http://coreylatislaw.com/wp-content/uploads/2011/12/brooch.jpg"
-                                        title='brooch'><img width="150"
-                                                            height="150"
-                                                            src="http://coreylatislaw.com/wp-content/uploads/2011/12/brooch-150x150.jpg"
-                                                            class="attachment-thumbnail"
-                                                            alt="brooch"
-                                                            title="brooch"/></a>
-                                </dt>
-                            </dl>
-                            <dl class='gallery-item'>
-                                <dt class='gallery-icon'><a
-                                        href="http://coreylatislaw.com/wp-content/uploads/2011/12/hairclip.jpg"
-                                        title='hairclip'><img width="150"
-                                                              height="150"
-                                                              src="http://coreylatislaw.com/wp-content/uploads/2011/12/hairclip-150x150.jpg"
-                                                              class="attachment-thumbnail"
-                                                              alt="hairclip"
-                                                              title="hairclip"/></a>
-                                </dt>
-                            </dl>
-                            <dl class='gallery-item'>
-                                <dt class='gallery-icon'><a
-                                        href="http://coreylatislaw.com/wp-content/uploads/2011/12/braclet.jpg"
-                                        title='bracelet'><img width="150"
-                                                              height="150"
-                                                              src="http://coreylatislaw.com/wp-content/uploads/2011/12/braclet-150x150.jpg"
-                                                              class="attachment-thumbnail"
-                                                              alt="bracelet"
-                                                              title="bracelet"/></a>
-                                </dt>
-                            </dl>
-                            <br style="clear: both"/>
-                            <dl class='gallery-item'>
-                                <dt class='gallery-icon'><a
-                                        href="http://coreylatislaw.com/wp-content/uploads/2011/12/belt.jpg"
-                                        title='belt'><img width="150"
-                                                          height="150"
-                                                          src="http://coreylatislaw.com/wp-content/uploads/2011/12/belt-150x150.jpg"
-                                                          class="attachment-thumbnail"
-                                                          alt="belt"
-                                                          title="belt"/></a>
-                                </dt>
-                            </dl>
-                            <dl class='gallery-item'>
-                                <dt class='gallery-icon'><a
-                                        href="http://coreylatislaw.com/wp-content/uploads/2011/12/brooch2.jpg"
-                                        title='brooch2'><img width="150"
-                                                             height="150"
-                                                             src="http://coreylatislaw.com/wp-content/uploads/2011/12/brooch2-150x150.jpg"
-                                                             class="attachment-thumbnail"
-                                                             alt="brooch2"
-                                                             title="brooch2"/></a>
-                                </dt>
-                            </dl>
-                            <dl class='gallery-item'>
-                                <dt class='gallery-icon'><a
-                                        href="http://coreylatislaw.com/wp-content/uploads/2011/12/necklace.jpg"
-                                        title='necklace'><img width="150"
-                                                              height="150"
-                                                              src="http://coreylatislaw.com/wp-content/uploads/2011/12/necklace-150x150.jpg"
-                                                              class="attachment-thumbnail"
-                                                              alt="necklace"
-                                                              title="necklace"/></a>
-                                </dt>
-                            </dl>
-                            <dl class='gallery-item'>
-                                <dt class='gallery-icon'><a
-                                        href="http://coreylatislaw.com/wp-content/uploads/2011/12/pendants.jpg"
-                                        title='pendants'><img width="150"
-                                                              height="150"
-                                                              src="http://coreylatislaw.com/wp-content/uploads/2011/12/pendants-150x150.jpg"
-                                                              class="attachment-thumbnail"
-                                                              alt="pendants"
-                                                              title="pendants"/></a>
-                                </dt>
-                            </dl>
-                            <br style="clear: both"/> <br style='clear: both;'/>
-                        </div>
-                        <p class="to_comments"><a
-                                href="http://coreylatislaw.com/recycled-electronic-jewelry-class/#comments"
-                                rel="nofollow"><span>2</span> comments</a></p>
-                    </div>
-                </div>
-                <div class="post-444 post type-post status-publish format-standard hentry category-mobile category-tech category-travel post_box"
-                     id="post-444">
-                    <div class="headline_area"><h2 class="entry-title"><a
-                            href="http://coreylatislaw.com/my-5-conference-essentials/"
-                            rel="bookmark"
-                            title="Permanent link to My 5 Conference Essentials">My
-                        5 Conference Essentials</a></h2></div>
-                    <div class="format_text entry-content"><p>I&#8217;ll be
-                        attending <a title="And Dev Con"
-                                     href="http://www.andevcon.com/AndevCon_II/index.html"
-                                     onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.andevcon.com']);"
-                                     target="_blank">Android Dev Con</a> and the
-                        <a title="Grace Hopper"
-                           href="http://gracehopper.org/2011/"
-                           onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://gracehopper.org']);"
-                           target="_blank">Grace Hopper Conference</a> this
-                        year.</p>
-
-                        <p>I heard good things about the first AnDevCon in March
-                            and I&#8217;m excited about sessions related to
-                            using advanced layout techniques, building a
-                            business around mobile apps, and
-                            productivity/testing. I&#8217;m bummed that I will
-                            be missing all of Wednesday&#8217;s sessions, but I&#8217;m
-                            heading to Grace Hopper that morning. I agonized
-                            over the decision, but went with long-term career
-                            aspirations (Attending the workshop: <a
-                                    title="Building Your Brand"
-                                    href="http://gracehopper.org/2011/conference/program-schedule/"
-                                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://gracehopper.org']);"
-                                    target="_blank">Building Your Brand as a
-                                Technical Expert or Leader</a>) over short term
-                            technical information (awesome information about the
-                            Android platform).</p>
-
-                        <p>Grace Hopper is a perennial favorite and may just be
-                            the only reason I&#8217;m still in tech. I met my
-                            future manager at the first one I attended in 2007
-                            and my second job came through a posting on <a
-                                    title="Systers" href="systers.org"
-                                    target="_blank">systers.org</a> (run by
-                            the<a title="Anita Borg Institute"
-                                  href="http://anitaborg.org/" target="_blank">
-                                Anita Borg Institute </a>who puts the conference
-                            together). The inspiration you experience at this
-                            conference is hard to put into words (<a
-                                    title="Check out my article in Linux Pro Magazine"
-                                    href="http://www.linux-magazine.com/w3/issue/109/093-093_gracehopper.pdf"
-                                    onclick="javascript:_gaq.push(['_trackEvent','download','http://www.linux-magazine.com/w3/issue/109/093-093_gracehopper.pdf']);"
-                                    target="_blank">Check out my article in
-                                Linux Pro Magazine!</a>), but I always leave
-                            energized about my career!</p>
-
-                        <p>Without further ado, here&#8217;s my top five
-                            conference survival items (click on the pics for
-                            more info):</p>
-                        <style type='text/css'>
-                            #gallery-2 {
-                            margin: auto;
-                            }
-                            #gallery-2 .gallery-item {
-                            float: left;
-                            margin-top: 10px;
-                            text-align: center;
-                            width: 33%;
-                            }
-                            #gallery-2 img {
-                            border: 2px solid #cfcfcf;
-                            }
-                            #gallery-2 .gallery-caption {
-                            margin-left: 0;
-                            }
-                        </style>
-                        <div id='gallery-2'
-                             class='gallery galleryid-444 gallery-columns-3 gallery-size-thumbnail'>
-                            <dl class='gallery-item'>
-                                <dt class='gallery-icon'><a
-                                        href="http://coreylatislaw.com/my-5-conference-essentials/air/"
-                                        title='Macbook Air'><img width="150"
-                                                                 height="150"
-                                                                 src="http://coreylatislaw.com/wp-content/uploads/2011/09/air-150x150.jpg"
-                                                                 class="attachment-thumbnail"
-                                                                 alt="Macbook Air"
-                                                                 title="Macbook Air"/></a>
-                                </dt>
-                                <dd class='wp-caption-text gallery-caption'>
-                                    Macbook Air
-                                </dd>
-                            </dl>
-                            <dl class='gallery-item'>
-                                <dt class='gallery-icon'><a
-                                        href="http://coreylatislaw.com/my-5-conference-essentials/camera/"
-                                        title='Digital Camera'><img width="150"
-                                                                    height="150"
-                                                                    src="http://coreylatislaw.com/wp-content/uploads/2011/09/camera-150x150.jpg"
-                                                                    class="attachment-thumbnail"
-                                                                    alt="Digital Camera"
-                                                                    title="Digital Camera"/></a>
-                                </dt>
-                                <dd class='wp-caption-text gallery-caption'>
-                                    Digital Camera
-                                </dd>
-                            </dl>
-                            <dl class='gallery-item'>
-                                <dt class='gallery-icon'><a
-                                        href="http://coreylatislaw.com/my-5-conference-essentials/purse/"
-                                        title='Diskette Purse/Bag of Holding'><img
-                                        width="150" height="150"
-                                        src="http://coreylatislaw.com/wp-content/uploads/2011/09/purse-150x150.jpg"
-                                        class="attachment-thumbnail"
-                                        alt="Diskette Purse"
-                                        title="Diskette Purse/Bag of Holding"/></a>
-                                </dt>
-                                <dd class='wp-caption-text gallery-caption'>
-                                    Diskette Purse
-                                </dd>
-                            </dl>
-                            <br style="clear: both"/>
-                            <dl class='gallery-item'>
-                                <dt class='gallery-icon'><a
-                                        href="http://coreylatislaw.com/my-5-conference-essentials/extension-cord/"
-                                        title='Mini Extension Cord'><img
-                                        width="150" height="150"
-                                        src="http://coreylatislaw.com/wp-content/uploads/2011/09/extension-cord-150x150.jpg"
-                                        class="attachment-thumbnail"
-                                        alt="Mini Extension Cord"
-                                        title="Mini Extension Cord"/></a></dt>
-                                <dd class='wp-caption-text gallery-caption'>
-                                    Mini Extension Cord
-                                </dd>
-                            </dl>
-                            <dl class='gallery-item'>
-                                <dt class='gallery-icon'><a
-                                        href="http://coreylatislaw.com/my-5-conference-essentials/coffee/"
-                                        title='Coffee Mug'><img width="150"
-                                                                height="150"
-                                                                src="http://coreylatislaw.com/wp-content/uploads/2011/09/coffee-150x150.jpg"
-                                                                class="attachment-thumbnail"
-                                                                alt="Coffee Mug"
-                                                                title="Coffee Mug"/></a>
-                                </dt>
-                                <dd class='wp-caption-text gallery-caption'>
-                                    Coffee Mug
-                                </dd>
-                            </dl>
-                            <br style='clear: both;'/></div>
-                        <p>I&#8217;d love to hear what&#8217;s essential to your
-                            conference experience in the comments!</p>
-
-                        <p class="to_comments"><a
-                                href="http://coreylatislaw.com/my-5-conference-essentials/#comments"
-                                rel="nofollow"><span>2</span> comments</a></p>
-                    </div>
-                </div>
-                <div class="prev_next"><p class="previous"><a
-                        href="http://coreylatislaw.com/page/2/">&larr; Previous
-                    Entries</a></p></div>
-            </div>
-            <div id="sidebars">
-                <div id="sidebar_1" class="sidebar">
-                    <ul class="sidebar_list">
-                        <li class="widget widget_text" id="text-3">
-                            <div class="textwidget"><img title="Corey Latislaw"
-                                                         alt="Picture of Corey Latislaw"
-                                                         class="profile"
-                                                         src="/images/corey.png"/>
-                                This corner of the web belongs to <strong>Corey
-                                    Leigh Latislaw</strong>, a code-loving human
-                                with a passion for all things green. <a
-                                        href="http://coreylatislaw.com/about">Learn
-                                    more →</a></div>
-                        </li>
-                        <li class="widget widget_text" id="text-4"><h3>Get
-                            Social</h3>
-
-                            <div class="textwidget">
-                                <ul id="social">
-                                    <li class="twitter"><a
-                                            href="http://www.twitter.com/corey_latislaw"
-                                            onclick="javascript:_gaq.push(['_trackEvent','outbound-widget','http://www.twitter.com']);">Twitter</a>
-                                    </li>
-                                    <li class="facebook"><a
-                                            href="http://www.facebook.com/corey.latislaw"
-                                            onclick="javascript:_gaq.push(['_trackEvent','outbound-widget','http://www.facebook.com']);">Facebook</a>
-                                    </li>
-                                    <li class="linkedin"><a
-                                            href="http://www.linkedin.com/in/coreylatislaw"
-                                            onclick="javascript:_gaq.push(['_trackEvent','outbound-widget','http://www.linkedin.com']);">LinkedIn</a>
-                                    </li>
-                                    <li class="rss"><a
-                                            href="feed://coreylatislaw.com/feed/">RSS
-                                        Feed</a></li>
-                                    <li class="google"><a
-                                            href="http://www.google.com/profiles/colabug"
-                                            onclick="javascript:_gaq.push(['_trackEvent','outbound-widget','http://www.google.com']);">Google</a>
-                                    </li>
-                                    <li class="flickr"><a
-                                            href="http://www.flickr.com/photos/colabug/"
-                                            onclick="javascript:_gaq.push(['_trackEvent','outbound-widget','http://www.flickr.com']);">Flickr</a>
-                                    </li>
-                                    <li class="email"><a
-                                            href="mailto:corey.latislaw@gmail.com">Email</a>
-                                    </li>
-                                    <li class="picasa"><a
-                                            href="https://github.com/colabug"
-                                            onclick="javascript:_gaq.push(['_trackEvent','outbound-widget','http://github.com']);">Github</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="widget thesis_widget_search" id="search">
-                            <form method="get" class="search_form"
-                                  action="http://coreylatislaw.com/"><p><input
-                                    class="text_input" type="text"
-                                    value="To search, type and hit enter"
-                                    name="s" id="s"
-                                    onfocus="if (this.value == 'To search, type and hit enter') {this.value = '';}"
-                                    onblur="if (this.value == '') {this.value = 'To search, type and hit enter';}"/>
-                                <input type="hidden" id="searchsubmit"
-                                       value="Search"/></p></form>
-                        </li>
-                        <li class="widget widget_recent_entries"
-                            id="recent-posts-3"><h3>Recent Posts</h3>
-                            <ul>
-                                <li>
-                                    <a href="http://coreylatislaw.com/android-101-class-2/"
-                                       title="Android 101, Class 2">Android 101,
-                                        Class 2</a></li>
-                                <li>
-                                    <a href="http://coreylatislaw.com/android-101-class-1/"
-                                       title="Android 101, Class 1">Android 101,
-                                        Class 1</a></li>
-                                <li>
-                                    <a href="http://coreylatislaw.com/beginning-android-with-intellij/"
-                                       title="Beginning Android with IntelliJ">Beginning
-                                        Android with IntelliJ</a></li>
-                                <li>
-                                    <a href="http://coreylatislaw.com/philly-food-swap/"
-                                       title="Philly Food Swap">Philly Food
-                                        Swap</a></li>
-                                <li>
-                                    <a href="http://coreylatislaw.com/mobile-lightning/"
-                                       title="Mobile Lightning!">Mobile
-                                        Lightning!</a></li>
-                            </ul>
-                        </li>
-                        <li class="widget widget_tag_cloud" id="tag_cloud-3">
-                            <h3>Tags</h3>
-
-                            <div class="tagcloud"><a
-                                    href='http://coreylatislaw.com/tag/cim/'
-                                    class='tag-link-13' title='1 topic'
-                                    style='font-size: 8pt;'>cim</a> <a
-                                    href='http://coreylatislaw.com/tag/mobile-2/'
-                                    class='tag-link-12' title='1 topic'
-                                    style='font-size: 8pt;'>mobile</a> <a
-                                    href='http://coreylatislaw.com/tag/philly/'
-                                    class='tag-link-11' title='1 topic'
-                                    style='font-size: 8pt;'>philly</a></div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div id="footer"><p>&copy; 2012 <a href="/">Corey Leigh Latislaw</a>
-            <span class="right-side"><a href="mailto:pyroxtreem@gmail.com">Designed</a> + <a
-                    href="http://williejackson.com">Developed</a> with <a
-                    href="http://coreylatislaw.com/thesis/">Thesis</a> &bull; <a
-                    href="http://coreylatislaw.com/wp-login.php">Log in</a></p>
-        </div>
-    </div>
 </div>
-<!--[if lte IE 8]>
-<div id="ie_clear"></div> <![endif]--></body>
+</div>
+</body>
 </html>
-<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
-
-Minified using disk: basic
-Page Caching using disk: enhanced (User is logged in)
-
-Served from: coreylatislaw.com @ 2012-08-15 13:11:13 -->
