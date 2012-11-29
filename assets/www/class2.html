@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" type="text/css"
+          href="custom/custom.css"
+          media="all"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Corey Leigh Latislaw</title>
+    <meta name="description" content="Technology, Food, and Green Issues."/>
+</head>
+
+<body class="custom">
+<div id="container">
+<div class="post-807 post type-post status-publish format-standard hentry category-mobile category-tech post_box top"
+     id="post-807">
+    <div class="format_text entry-content"><p>It&#8217;s time to
+        make our first Android application! <a
+                href="http://prezi.com/v42zi9rodkz5/android-101-class-2/"
+                onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://prezi.com']);">Check
+            out today&#8217;s slides</a>.</p>
+
+        <p><strong>Office Hours</strong></p>
+
+        <p>If you have any questions, please feel free to reach
+            out to the Facebook group. This forum gives you
+            access to your fellow classmates, the TAs, and
+            myself. In addition, I will hold Skype office hours
+            on Thursday, August 16 from 7-8 PM to answer any
+            questions that will help you get started. I will
+            hold office hours again on Saturday from 4-6 PM to
+            answer questions you may have when deeper in the
+            coding assignment.</p>
+
+        <p><strong>Homework Exercises</strong></p>
+
+        <p>If you haven&#8217;t finished <a href="class1.html">last
+            night&#8217;s homework</a>, please start there to
+            get more familiar with the foundations of Java.</p>
+
+        <p>Now that we&#8217;ve laid the ground work for the
+            calculator app, let&#8217;s make it work! Here&#8217;s
+            what the calculator should do:</p>
+        <ol>
+            <li>Consecutive numbers should be appended to the
+                current number (Example: 1 2 3 4 5 should
+                display 12345).
+            </li>
+            <li>Create an enum that represents operation types
+                that a calculator can perform (see below for
+                more details).
+            </li>
+            <li>When an operation is performed, store the
+                type.
+            </li>
+            <li>When an operation is performed, store the number
+                displayed.
+                <ul>
+                    <li>NOTE: We&#8217;re displaying as a
+                        String, but should store a number type.
+                    </li>
+                    <li>int number = Integer.parseInt(&#8220;12345&#8243;)
+                        // Gives the integer 12345
+                    </li>
+                </ul>
+            </li>
+            <li>When equal is pressed, calculate the result
+                using the operation type and stored number.
+            </li>
+            <li>Division and modulus should perform integer
+                calculations (Example: 7 / 3 = 2 and 7 % 3 = 1).
+            </li>
+            <li>When equal is pressed, update the display with
+                the result.
+            </li>
+            <li>Pressing equal after a calculation is complete
+                should show the last result (Example: 2 + 3 = 5
+                ==== 5, pressing equal repeatedly after the
+                initial calculation will show as result of 5).
+            </li>
+            <li>The clear button should reset the calculator
+                state.
+            </li>
+            <li>Users should be able to change their minds about
+                what calculation to perform (Example: 2 * + / *
+                4 = 8, should calculate 2 * 4 because the last
+                operation entered was multiplication).
+            </li>
+            <li>Calculations can &#8220;chain&#8221; or use the
+                last calculated number in the new equation
+                (Example: 2 + 3 = 5 + 2 = 7).
+            </li>
+        </ol>
+        <p><strong>Extra Credit (End of Class Goals)</strong>
+        </p>
+
+        <p>Users don&#8217;t always do what you expect them too!
+            Handle the following unexpected user actions or
+            exceptional states:</p>
+        <ul>
+            <li>Detect division and modulus by 0. When this
+                occurs, place the application in an error mode
+                and display the string &#8220;NaN&#8221;. Only
+                pressing the clear button or a number key clears
+                this state.
+            </li>
+            <li>User presses equals after starting the
+                application.
+            </li>
+            <li>User presses an operation before a number is
+                entered.
+            </li>
+            <li>User enters a number, presses an operation, then
+                presses enter.
+            </li>
+            <li>Prevent and detect integer overflow. To prevent,
+                limit the number of digits a user can enter.
+                When a calculation exceeds the maximum integer
+                amount, place the calculator in an error mode
+                and display the string &#8220;Error&#8221;. Only
+                pressing the clear button or a number key clears
+                this state.
+            </li>
+        </ul>
+        <p><strong>Switches &amp; Enums</strong></p>
+
+        <p>Using switches and enums together can simplify the
+            coding assignment. An <a
+                    href="http://docs.oracle.com/javase/tutorial/java/javaOO/enum.html"
+                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://docs.oracle.com']);">enum</a>
+            is a handy data type that allows you to basically
+            specify a name for an integer. Consider this
+            example:</p>
+        <pre style="padding-left: 30px;">public enum Season { WINTER, SPRING, SUMMER, FALL }</pre>
+        <p>You&#8217;d define this enum in Season.java or in
+            your current class. Then, you create a field in your
+            activity that stores a particular season.</p>
+        <pre style="padding-left: 30px;">Season season = Season.SUMMER;</pre>
+        <p>This technique is especially useful when you want to
+            do different things for different seasons. You could
+            do this with normal if/else/else if blocks, but a <a
+                    href="http://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html"
+                    onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://docs.oracle.com']);">switch
+                statement</a> is much cleaner:</p><pre
+                style="padding-left: 30px;">switch (season)
+{
+    case SPRING:
+        System.out.println("I love spring!");
+        break;
+
+    case SUMMER:
+        System.out.println("I love summer!");
+        break;
+
+    case FALL:
+        System.out.println("I love fall!");
+        break;
+
+    case WINTER:
+        System.out.println("I love winter!");
+        break;
+
+    default:
+        System.out.println("Not sure what season we're in!");
+}</pre>
+</div>
+</div>
+</body>
+</html>
